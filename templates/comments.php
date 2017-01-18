@@ -1,36 +1,57 @@
-<?php
-if (post_password_required()) {
-  return;
-}
-?>
-
-<section id="comments" class="comments">
-  <?php if (have_comments()) : ?>
-    <h2><?php printf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h2>
-
-    <ol class="comment-list">
-      <?php wp_list_comments(['style' => 'ol', 'short_ping' => true]); ?>
-    </ol>
-
-    <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
-      <nav>
-        <ul class="pager">
-          <?php if (get_previous_comments_link()) : ?>
-            <li class="previous"><?php previous_comments_link(__('&larr; Older comments', 'sage')); ?></li>
-          <?php endif; ?>
-          <?php if (get_next_comments_link()) : ?>
-            <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'sage')); ?></li>
-          <?php endif; ?>
-        </ul>
-      </nav>
-    <?php endif; ?>
-  <?php endif; // have_comments() ?>
-
-  <?php if (!comments_open() && get_comments_number() != '0' && post_type_supports(get_post_type(), 'comments')) : ?>
-    <div class="alert alert-warning">
-      <?php _e('Comments are closed.', 'sage'); ?>
+<div class="row list-section">
+  <div class="col s12">
+    <div class="row small-title-parg" id="list-section-title">
+      <p class="center-align">SMALL TITLE</p>
+      <hr class="blue-underline">
     </div>
-  <?php endif; ?>
-
-  <?php comment_form(); ?>
-</section>
+    <div class="row">
+      <div class="col s10 offset-s2">
+        <div class="row list-row">
+          <div class="col s4 list-area">
+            <i class="fa fa-circle fa-4x list-circles" aria-hidden="true"></i><p class="list-bold">List</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">Newark, NJ</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">All Day</p>
+          </div>
+        </div>
+        <div class="row list-row">
+          <div class="col s4 list-area">
+            <i class="fa fa-circle fa-4x list-circles" aria-hidden="true"></i><p class="list-bold">List</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">Newark, NJ</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">All Day</p>
+          </div>
+        </div>
+        <div class="row list-row">
+          <div class="col s4 list-area">
+            <i class="fa fa-circle fa-4x list-circles" aria-hidden="true"></i><p class="list-bold">List</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">Newark, NJ</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">All Day</p>
+          </div>
+        </div>  
+        <div class="row list-row">
+          <div class="col s4 list-area">
+            <i class="fa fa-circle fa-4x list-circles" aria-hidden="true"></i><p class="list-bold">List</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">Newark, NJ</p>
+          </div>
+          <div class="col s4">
+            <p class="list-info">All Day</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>

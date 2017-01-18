@@ -1,9 +1,17 @@
-<div class="col s12" id="gray-mid-section">
-  <div class="center-align" id="small-title">
-    <p id="small-title-parg">Small Title</p>
-  </div>
-  <div class="center-align">
-    <p id="mid-section-parg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat assumenda possimus facilis eius libero incidunt, ipsam cum deleniti optio doloribus reprehenderit ratione. Nisi culpa sit enim, reprehenderit, odit consectetur saepe!</p>  
-  </div>
-  
+<div class="row" id="gray-mid-section">
+	<div class="row">
+		<div class="col s12">
+	  		<div class="center-align small-title-parg">
+	    		<p>SMALL TITLE</p>
+	    		<hr class="blue-underline">
+	  		</div>		
+		</div>
+  	</div>
+	<div class="row">
+		<div class="col s12"">
+	  		<div class="center-align col s8 offset-s2">
+	    		<p id="mid-section-parg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat assumenda possimus facilis</p>  
+	  		</div>
+		</div>
+	</div>	
 </div>
